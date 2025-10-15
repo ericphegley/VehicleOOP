@@ -1,0 +1,301 @@
+2025-10-15T14:27:41.230-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 13556 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:27:41.232-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:27:41.264-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-15T14:27:41.265-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-15T14:27:41.717-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:27:41.756-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 1 JPA repository interface.
+2025-10-15T14:27:42.073-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:27:42.082-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:27:42.082-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:27:42.120-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:27:42.120-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 855 ms
+2025-10-15T14:27:42.209-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-15T14:27:42.340-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:27:42.342-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-15T14:27:42.376-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:27:42.416-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15T14:27:42.441-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:27:42.662-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:27:42.724-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:27:43.330-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:27:43.356-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:27:43.499-05:00  WARN 13556 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:27:43.683-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:27:43.726-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:27:43.761-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:27:43.771-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 2.871 seconds (process running for 3.288)
+2025-10-15T14:42:08.149-05:00  INFO 13556 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:42:08.152-05:00  INFO 13556 --- [VehicleOOP] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:42:08.266-05:00  INFO 13556 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:42:08.269-05:00  INFO 13556 --- [VehicleOOP] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:42:08.274-05:00  WARN 13556 --- [VehicleOOP] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:42:08.274-05:00  INFO 13556 --- [VehicleOOP] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-15T14:42:08.276-05:00  INFO 13556 --- [VehicleOOP] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-15T14:42:08.333-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 13556 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:42:08.334-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:42:08.463-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:42:08.469-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-10-15T14:42:08.528-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:42:08.529-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:42:08.529-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:42:08.559-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:42:08.559-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 224 ms
+2025-10-15T14:42:08.586-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-15T14:42:08.588-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:42:08.588-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-15T14:42:08.589-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:42:08.592-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:42:08.600-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:42:08.602-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:42:08.642-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:42:08.643-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:42:08.682-05:00  WARN 13556 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:42:08.732-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:42:08.741-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:42:08.750-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:42:08.753-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.443 seconds (process running for 868.271)
+2025-10-15T14:42:08.755-05:00  INFO 13556 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T14:45:12.078-05:00  INFO 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-10-15T14:45:12.079-05:00  INFO 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:45:12.189-05:00  INFO 13556 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:45:12.191-05:00  INFO 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:45:12.192-05:00  WARN 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:45:12.192-05:00  INFO 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-15T14:45:12.193-05:00  INFO 13556 --- [VehicleOOP] [RMI TCP Connection(31)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-15T14:45:18.482-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:45:18.484-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:45:18.514-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-15T14:45:18.515-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-15T14:45:18.972-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:45:19.019-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interface.
+2025-10-15T14:45:19.357-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:45:19.366-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:45:19.366-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:45:19.401-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:45:19.402-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 886 ms
+2025-10-15T14:45:19.502-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-15T14:45:19.643-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:45:19.644-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-15T14:45:19.679-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:45:19.721-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-15T14:45:19.748-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:45:19.981-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:45:20.045-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:45:20.688-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:45:20.716-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:45:20.862-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:45:21.060-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:45:21.106-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:45:21.139-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:45:21.149-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 2.992 seconds (process running for 3.432)
+2025-10-15T14:45:57.062-05:00  INFO 10388 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:45:57.065-05:00  INFO 10388 --- [VehicleOOP] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:45:57.177-05:00  INFO 10388 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:45:57.180-05:00  INFO 10388 --- [VehicleOOP] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:45:57.185-05:00  WARN 10388 --- [VehicleOOP] [Thread-5] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:45:57.185-05:00  INFO 10388 --- [VehicleOOP] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-15T14:45:57.187-05:00  INFO 10388 --- [VehicleOOP] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-15T14:45:57.247-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:45:57.247-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:45:57.370-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:45:57.380-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-10-15T14:45:57.441-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:45:57.442-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:45:57.442-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:45:57.456-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:45:57.456-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 208 ms
+2025-10-15T14:45:57.479-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-15T14:45:57.481-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn11: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:45:57.481-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-15T14:45:57.482-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:45:57.485-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:45:57.496-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:45:57.497-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:45:57.531-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:45:57.532-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:45:57.573-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:45:57.629-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:45:57.638-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:45:57.647-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:45:57.650-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.426 seconds (process running for 39.933)
+2025-10-15T14:45:57.652-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T14:47:40.856-05:00  INFO 10388 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:47:40.857-05:00  INFO 10388 --- [VehicleOOP] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:47:40.964-05:00  INFO 10388 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:47:40.965-05:00  INFO 10388 --- [VehicleOOP] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:40.967-05:00  WARN 10388 --- [VehicleOOP] [Thread-7] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:47:40.967-05:00  INFO 10388 --- [VehicleOOP] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-15T14:47:40.967-05:00  INFO 10388 --- [VehicleOOP] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-15T14:47:41.035-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:47:41.035-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:47:41.166-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:47:41.173-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-10-15T14:47:41.240-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:47:41.240-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:47:41.240-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:47:41.254-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:47:41.255-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 219 ms
+2025-10-15T14:47:41.282-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-15T14:47:41.283-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn22: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:47:41.284-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-15T14:47:41.285-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:47:41.288-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:47:41.296-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:47:41.297-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:47:41.329-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:47:41.331-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:41.371-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:47:41.437-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:47:41.448-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:47:41.457-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:47:41.461-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.448 seconds (process running for 143.744)
+2025-10-15T14:47:41.462-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T14:47:42.871-05:00  INFO 10388 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:47:42.872-05:00  INFO 10388 --- [VehicleOOP] [Thread-12] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:47:42.979-05:00  INFO 10388 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:47:42.981-05:00  INFO 10388 --- [VehicleOOP] [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:42.982-05:00  WARN 10388 --- [VehicleOOP] [Thread-12] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:47:42.982-05:00  INFO 10388 --- [VehicleOOP] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-15T14:47:42.983-05:00  INFO 10388 --- [VehicleOOP] [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-10-15T14:47:43.055-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:47:43.056-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:47:43.164-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:47:43.170-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-10-15T14:47:43.227-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:47:43.228-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:47:43.228-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:47:43.243-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:47:43.243-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 186 ms
+2025-10-15T14:47:43.263-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-10-15T14:47:43.265-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn32: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:47:43.265-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-10-15T14:47:43.266-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:47:43.268-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:47:43.274-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:47:43.276-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:47:43.304-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:47:43.306-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:43.341-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:47:43.389-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:47:43.398-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:47:43.408-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:47:43.413-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.377 seconds (process running for 145.695)
+2025-10-15T14:47:43.413-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T14:47:53.952-05:00  INFO 10388 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:47:53.954-05:00  INFO 10388 --- [VehicleOOP] [Thread-16] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:47:54.065-05:00  INFO 10388 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:47:54.067-05:00  INFO 10388 --- [VehicleOOP] [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:54.068-05:00  WARN 10388 --- [VehicleOOP] [Thread-16] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:47:54.068-05:00  INFO 10388 --- [VehicleOOP] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-10-15T14:47:54.068-05:00  INFO 10388 --- [VehicleOOP] [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-10-15T14:47:54.132-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:47:54.132-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:47:54.245-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:47:54.251-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2025-10-15T14:47:54.301-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:47:54.301-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:47:54.301-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:47:54.316-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:47:54.316-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 183 ms
+2025-10-15T14:47:54.337-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-10-15T14:47:54.338-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn42: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:47:54.338-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-10-15T14:47:54.339-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:47:54.342-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:47:54.347-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:47:54.348-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:47:54.379-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:47:54.381-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:47:54.417-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:47:54.464-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:47:54.472-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:47:54.480-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:47:54.484-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.37 seconds (process running for 156.766)
+2025-10-15T14:47:54.484-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-10-15T14:48:18.297-05:00  INFO 10388 --- [VehicleOOP] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-10-15T14:48:18.298-05:00  INFO 10388 --- [VehicleOOP] [Thread-20] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-15T14:48:18.407-05:00  INFO 10388 --- [VehicleOOP] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-15T14:48:18.409-05:00  INFO 10388 --- [VehicleOOP] [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:48:18.410-05:00  WARN 10388 --- [VehicleOOP] [Thread-20] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-10-15T14:48:18.410-05:00  INFO 10388 --- [VehicleOOP] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-10-15T14:48:18.410-05:00  INFO 10388 --- [VehicleOOP] [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-10-15T14:48:18.471-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Starting VehicleOopApplication using Java 17.0.12 with PID 10388 (C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP\target\classes started by erphe in C:\Users\erphe\Documents\TicketWorkspace\AIWorkspace\VehicleOOP)
+2025-10-15T14:48:18.471-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-10-15T14:48:18.580-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-15T14:48:18.586-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2025-10-15T14:48:18.636-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-15T14:48:18.636-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-15T14:48:18.636-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-15T14:48:18.671-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-15T14:48:18.671-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 199 ms
+2025-10-15T14:48:18.691-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-10-15T14:48:18.693-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn52: url=jdbc:h2:mem:testdb user=SA
+2025-10-15T14:48:18.693-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-10-15T14:48:18.694-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-15T14:48:18.696-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-15T14:48:18.702-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-15T14:48:18.703-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-15T14:48:18.728-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-15T14:48:18.730-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-15T14:48:18.763-05:00  WARN 10388 --- [VehicleOOP] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-15T14:48:18.812-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2025-10-15T14:48:18.821-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-15T14:48:18.829-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-15T14:48:18.832-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] com.example.demo.VehicleOopApplication   : Started VehicleOopApplication in 0.38 seconds (process running for 181.115)
+2025-10-15T14:48:18.833-05:00  INFO 10388 --- [VehicleOOP] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
