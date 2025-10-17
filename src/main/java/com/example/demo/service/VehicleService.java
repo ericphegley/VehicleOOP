@@ -2,6 +2,7 @@ package com.example.demo.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,6 +28,19 @@ public class VehicleService {
     
     public Vehicle save(Van van) {
     	return vehicleRepository.save(van);
+    }
+    
+    public Vehicle save(Vehicle vehicle) {
+    	return vehicleRepository.save(vehicle);
+    }
+    
+    public Vehicle getById(Long id) {
+    	Optional<Vehicle> v = vehicleRepository.findById(id);
+    	if(v.isPresent())
+    		return v.get();
+    	else{
+    		return null;
+    	}
     }
     
     
