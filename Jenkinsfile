@@ -23,7 +23,7 @@ pipeline {
             steps {
                 sh "docker stop vehicle-oop || true"
                 sh "docker rm vehicle-oop || true"
-                sh "docker run -d -p 8080:8080 --name vehicle-oop $DOCKER_IMAGE"
+                sh "docker run -d -p 8080:8081 --name vehicle-oop $DOCKER_IMAGE"
             }
         }
     }
