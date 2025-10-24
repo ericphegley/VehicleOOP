@@ -9,9 +9,9 @@ pipeline {
                 git credentialsId: 'github-creds', url: 'https://github.com/ericphegley/VehicleOOP.git'
             }
         }
-        stage('Build JAR') {
+        stage('Build & Test') {
             steps {
-                sh 'mvn clean package -DskipTests'
+                sh 'mvn clean test package -DskipTests=false'
             }
         }
         stage('Docker Build') {
