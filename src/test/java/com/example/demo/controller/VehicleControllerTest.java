@@ -48,6 +48,8 @@ public class VehicleControllerTest {
 
 	}
 	
+	
+	//testing findall
 	@Test
 	void findAll() throws Exception {
 		when(vehicleService.getAllVehicles()).thenReturn(
@@ -57,14 +59,53 @@ public class VehicleControllerTest {
 	       .andExpect(status().isOk());
 	}
 	
+	//testing findall when no list
+	@Test
+	void findAllEmptyList() throws Exception {
+	    when(vehicleService.getAllVehicles()).thenReturn(List.of());
+
+	    mock.perform(get("/vehicles"))
+	        .andExpect(status().isOk())
+	        .andExpect(jsonPath("$").isEmpty());
+	}
+	
+	//testing findbyid
 	@Test
 	void findByIdValid() throws Exception {
 	    Van van = new Van("Ford", 2000);
-	    when(vehicleService.getById((long)1)).thenReturn(van);
+	    when(vehicleService.getById(1L)).thenReturn(van);
 
 	    mock.perform(get("/vehicles/1"))
 	        .andExpect(status().isOk())
 	        .andExpect(jsonPath("$.manufacturer").value("Ford"))
 	        .andExpect(jsonPath("$.price").value(2000));
+	}
+	
+	//testing findbyid not found
+	@Test
+	void findByIdNotFound() throws Exception {
+	    when(vehicleService.getById(99L)).thenReturn(null);
+
+	    mock.perform(get("/vehicles/99"))
+	        .andExpect(status().isNotFound())
+	        .andExpect(jsonPath("$").value("vehicle with id doesn't exist"));
+	}
+	
+
+	
+	//testing saving van
+	@Test
+	void saveVan() throws Exception {
+	    Van van = new Van("Chevy", 10000);
+	    when(vehicleService.save(any(Van.class))).thenReturn(van);
+
+	    mock.perform(post("/vehicles/van")
+	            .contentType(MediaType.APPLICATION_JSON)
+	            .content(objectMapper.writeValueAsString(van)))
+	        .andExpect(status().isCreated())
+	        .andExpect(jsonPath("$.manufacturer").value("Chevy"))
+	        .andExpect(jsonPath("$.price").value(10000));
+
+	    verify(vehicleService).save(any(Van.class));
 	}
 }
