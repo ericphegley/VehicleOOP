@@ -36,6 +36,15 @@ pipeline {
 
             }
         }
+        stage('Configure kubectl') {
+            steps {
+                withCredentials([usernamePassword(credentialsId: 'aws-creds', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    sh '''
+                        aws eks update-kubeconfig --region ${AWS_REGION} --name vehicle-cluster
+                    '''
+                }
+            }
+        }
         stage('Deploy to EKS') {
             steps {
                 sh '''
