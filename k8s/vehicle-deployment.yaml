@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vehicle-oop-deployment
+  namespace: vehicle-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: vehicle-oop
+  template:
+    metadata:
+      labels:
+        app: vehicle-oop
+    spec:
+      containers:
+        - name: vehicle-oop
+          image: 203918866266.dkr.ecr.us-east-1.amazonaws.com/vehicle-oop:latest
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_DATASOURCE_URL
+              value: jdbc:mysql://98.92.225.202:3306/vehicle_db
+            - name: SPRING_DATASOURCE_USERNAME
+              value: appuser
+            - name: SPRING_DATASOURCE_PASSWORD
+              value: password
