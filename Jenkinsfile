@@ -33,25 +33,18 @@ pipeline {
                         docker push ${DOCKER_IMAGE}
                     '''
                 }
-
-            }
-        }
-        stage('Configure kubectl') {
-            steps {
-                withCredentials([usernamePassword(credentialsId: 'aws-creds', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
-                    sh '''
-                        aws eks update-kubeconfig --region ${AWS_REGION} --name vehicle-cluster
-                    '''
-                }
             }
         }
         stage('Deploy to EKS') {
             steps {
-                sh '''
-                    kubectl apply -f k8s/vehicle-deployment.yaml -n ${K8S_NAMESPACE}
-                    kubectl apply -f k8s/vehicle-service.yaml -n ${K8S_NAMESPACE}
-                    kubectl rollout status deployment/vehicle-oop-deployment -n ${K8S_NAMESPACE}
-                '''
+                withCredentials([usernamePassword(credentialsId: 'aws-creds', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    sh '''
+                        aws eks update-kubeconfig --region ${AWS_REGION} --name vehicle-cluster
+                        kubectl apply -f k8s/vehicle-deployment.yaml -n ${K8S_NAMESPACE}
+                        kubectl apply -f k8s/vehicle-service.yaml -n ${K8S_NAMESPACE}
+                        kubectl rollout status deployment/vehicle-oop-deployment -n ${K8S_NAMESPACE}
+                    '''
+                }
             }
         }
     }
