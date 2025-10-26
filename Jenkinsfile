@@ -26,11 +26,14 @@ pipeline {
         }
         stage('Push to ECR') {
             steps {
-                sh '''
-                    aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
-                    docker tag ${REPO_NAME}:latest ${DOCKER_IMAGE}
-                    docker push ${DOCKER_IMAGE}
-                '''
+                withCredentials([usernamePassword(credentialsId: 'aws-creds', usernameVariable: 'AWS_ACCESS_KEY_ID', passwordVariable: 'AWS_SECRET_ACCESS_KEY')]) {
+                    sh '''
+                        aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
+                        docker tag ${REPO_NAME}:latest ${DOCKER_IMAGE}
+                        docker push ${DOCKER_IMAGE}
+                    '''
+                }
+
             }
         }
         stage('Deploy to EKS') {
