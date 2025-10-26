@@ -6,6 +6,7 @@ pipeline {
         REPO_NAME = "vehicle-oop"
         ECR_REPO = "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${REPO_NAME}"
         DOCKER_IMAGE = "${ECR_REPO}:latest"
+        K8S_NAMESPACE = "vehicle-app"  
     }
     stages {
         stage('Checkout') {
@@ -29,6 +30,15 @@ pipeline {
                     aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
                     docker tag ${REPO_NAME}:latest ${DOCKER_IMAGE}
                     docker push ${DOCKER_IMAGE}
+                '''
+            }
+        }
+        stage('Deploy to EKS') {
+            steps {
+                sh '''
+                    kubectl apply -f k8s/vehicle-deployment.yaml -n ${K8S_NAMESPACE}
+                    kubectl apply -f k8s/vehicle-service.yaml -n ${K8S_NAMESPACE}
+                    kubectl rollout status deployment/vehicle-oop-deployment -n ${K8S_NAMESPACE}
                 '''
             }
         }
