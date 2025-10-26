@@ -1,7 +1,11 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "vehicle-oop:latest"
+        AWS_REGION = "us-east-1"
+        ACCOUNT_ID = "203918866266"
+        REPO_NAME = "vehicle-oop"
+        ECR_REPO = "${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${REPO_NAME}"
+        DOCKER_IMAGE = "${ECR_REPO}:latest"
     }
     stages {
         stage('Checkout') {
@@ -16,14 +20,16 @@ pipeline {
         }
         stage('Docker Build') {
             steps {
-                sh "docker build -t $DOCKER_IMAGE ."
+                sh "docker build -t ${REPO_NAME}:latest ."
             }
         }
-        stage('Run Container') {
+        stage('Push to ECR') {
             steps {
-                sh "docker stop vehicle-oop || true"
-                sh "docker rm vehicle-oop || true"
-                sh "docker run -d -p 8081:8081 --name vehicle-oop $DOCKER_IMAGE"
+                sh '''
+                    aws ecr get-login-password --region ${AWS_REGION} | docker login --username AWS --password-stdin ${ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com
+                    docker tag ${REPO_NAME}:latest ${DOCKER_IMAGE}
+                    docker push ${DOCKER_IMAGE}
+                '''
             }
         }
     }
